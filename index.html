@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Au Sio Kicks Collection — Original curated kicks in Githurai. Browse the full collection anytime.">
+<title>Au Sio Kicks Collection — Githurai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="#top" class="brand">
+    <span class="brand-mark">Au Sio</span>
+    <span class="brand-tag">KICKS COLLECTION</span>
+  </a>
+  <nav class="main-nav">
+    <a href="#collection">Collection</a>
+    <a href="#visit">Visit</a>
+  </nav>
+  <button type="button" class="cart-button" id="cartButton" aria-label="Open cart">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1.5"/><circle cx="19" cy="21" r="1.5"/><path d="M2.5 3h2.5l2.5 13h11l2-9H6"/></svg>
+    <span class="cart-badge" id="cartBadge">0</span>
+  </button>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">GITHURAI · ORIGINAL CURATED KICKS</p>
+      <h1>Every shoe we have.<br><span class="gold">In one place.</span></h1>
+      <p class="hero-sub">Not just what we posted today. Browse the full Au Sio collection — anytime, on any phone. Tap a shoe, order on WhatsApp.</p>
+      <div class="hero-actions">
+        <a href="#collection" class="btn btn-primary">Browse Collection</a>
+        <a href="https://wa.me/254740636756?text=Hi%20Au%20Sio%20[SITE]%2C%20I%20want%20to%20see%20what's%20available" class="btn btn-secondary" target="_blank" rel="noopener">Chat with us</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker">
+    <div class="ticker-track">
+      <span>Just in — Air Jordan 12 Retro</span><span class="dot">•</span>
+      <span>Puma Suede — White/Blue</span><span class="dot">•</span>
+      <span>Chukka Boot — African Print</span><span class="dot">•</span>
+      <span>Suede Runner — Grey/Orange</span><span class="dot">•</span>
+      <span>Original mitumba · Curated in Githurai</span><span class="dot">•</span>
+      <span>Just in — Air Jordan 12 Retro</span><span class="dot">•</span>
+      <span>Puma Suede — White/Blue</span><span class="dot">•</span>
+      <span>Chukka Boot — African Print</span><span class="dot">•</span>
+      <span>Suede Runner — Grey/Orange</span><span class="dot">•</span>
+      <span>Original mitumba · Curated in Githurai</span><span class="dot">•</span>
+    </div>
+  </div>
+
+  <section class="stats-strip">
+    <div class="stat"><strong>70+</strong><span>Pairs in stock</span></div>
+    <div class="stat"><strong>100%</strong><span>Original</span></div>
+    <div class="stat"><strong>1 of 1</strong><span>Every pair unique</span></div>
+    <div class="stat"><strong>Githurai</strong><span>See in person</span></div>
+  </section>
+
+  <section id="collection" class="collection-section">
+    <div class="section-heading">
+      <p class="eyebrow">THE COLLECTION</p>
+      <h2>Available now.</h2>
+      <p class="section-sub">Every pair below is in stock. Tap one to order on WhatsApp.</p>
+    </div>
+
+    <div class="filters" id="filters">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="jordan">Jordan</button>
+      <button class="filter" data-filter="puma">Puma</button>
+      <button class="filter" data-filter="select">Au Sio Select</button>
+    </div>
+
+    <div class="featured-shoe">
+      <div class="featured-image">
+        <img src="images/shoe-1.jpg" alt="Air Jordan 12 Retro" loading="eager">
+        <span class="featured-badge">★ This week's pick</span>
+      </div>
+      <div class="featured-content">
+        <p class="product-brand">JORDAN</p>
+        <h3>Air Jordan 12 Retro — Pink/White</h3>
+        <p class="featured-desc">Our most-wanted pair right now. Original mitumba, excellent condition, UK 9. Only 1 available.</p>
+        <div class="featured-footer">
+          <span class="product-price">Ask price</span>
+          <a href="https://wa.me/254740636756?text=Hi%20Au%20Sio%20[SITE]%2C%20I'm%20interested%20in%20the%20Air%20Jordan%2012%20Retro%20(UK%209)" class="btn btn-primary" target="_blank" rel="noopener">Reserve this pair</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-grid" id="productGrid">
+
+      <article class="product-card" data-brand="jordan" data-id="shoe-1" data-name="Air Jordan 12 Retro — Pink/White" data-size="UK 9" data-condition="Excellent" data-image="images/shoe-1.jpg" data-description="The most-wanted pair in the collection. Original mitumba, excellent condition, iconic pink-and-white colorway.">
+        <div class="product-image">
+          <img src="images/shoe-1.jpg" alt="Air Jordan 12 Retro — Pink/White" loading="lazy">
+          <span class="condition">Excellent</span>
+          <span class="tap-hint">Tap to view</span>
+        </div>
+        <div class="product-info">
+          <p class="product-brand">JORDAN</p>
+          <h3>Air Jordan 12 Retro — Pink/White</h3>
+          <p class="product-meta">UK 9 · Original mitumba</p>
+          <div class="product-footer">
+            <span class="product-price">Ask price</span>
+            <button type="button" class="product-order add-to-cart" data-id="shoe-1">Add to cart</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-brand="puma" data-id="shoe-2" data-name="Puma Suede — White/Blue" data-size="UK 8" data-condition="Excellent" data-image="images/shoe-2.jpg" data-description="Clean classic Puma Suede with blue accents. Original, excellent condition. A timeless everyday pair.">
+        <div class="product-image">
+          <img src="images/shoe-2.jpg" alt="Puma Suede — White/Blue" loading="lazy">
+          <span class="condition">Excellent</span>
+          <span class="tap-hint">Tap to view</span>
+        </div>
+        <div class="product-info">
+          <p class="product-brand">PUMA</p>
+          <h3>Puma Suede — White/Blue</h3>
+          <p class="product-meta">UK 8 · Original mitumba</p>
+          <div class="product-footer">
+            <span class="product-price">Ask price</span>
+            <button type="button" class="product-order add-to-cart" data-id="shoe-2">Add to cart</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-brand="select" data-id="shoe-3" data-name="Chukka Boot — African Print" data-size="UK 10" data-condition="Unique" data-image="images/shoe-3.jpg" data-description="One-of-a-kind chukka boot with African print detailing. Handpicked — you won't find another like it.">
+        <div class="product-image">
+          <img src="images/shoe-3.jpg" alt="Chukka Boot — African Print" loading="lazy">
+          <span class="condition">Unique</span>
+          <span class="tap-hint">Tap to view</span>
+        </div>
+        <div class="product-info">
+          <p class="product-brand">AU SIO SELECT</p>
+          <h3>Chukka Boot — African Print</h3>
+          <p class="product-meta">UK 10 · Original mitumba</p>
+          <div class="product-footer">
+            <span class="product-price">Ask price</span>
+            <button type="button" class="product-order add-to-cart" data-id="shoe-3">Add to cart</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-brand="select" data-id="shoe-4" data-name="Suede Runner — Grey/Orange" data-size="UK 9" data-condition="Excellent" data-image="images/shoe-4.jpg" data-description="Clean grey suede runner with a bold orange sole. Original, excellent condition, easy to wear with anything.">
+        <div class="product-image">
+          <img src="images/shoe-4.jpg" alt="Suede Runner — Grey/Orange" loading="lazy">
+          <span class="condition">Excellent</span>
+          <span class="tap-hint">Tap to view</span>
+        </div>
+        <div class="product-info">
+          <p class="product-brand">AU SIO SELECT</p>
+          <h3>Suede Runner — Grey/Orange</h3>
+          <p class="product-meta">UK 9 · Original mitumba</p>
+          <div class="product-footer">
+            <span class="product-price">Ask price</span>
+            <button type="button" class="product-order add-to-cart" data-id="shoe-4">Add to cart</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="how-section">
+    <div class="section-heading">
+      <p class="eyebrow">HOW IT WORKS</p>
+      <h2>Three taps. That's it.</h2>
+    </div>
+    <div class="how-grid">
+      <div class="how-card">
+        <span class="how-num">01</span>
+        <h3>Browse</h3>
+        <p>See every shoe we have — filter by brand or style.</p>
+      </div>
+      <div class="how-card">
+        <span class="how-num">02</span>
+        <h3>Tap Order</h3>
+        <p>A WhatsApp message opens, pre-filled with the shoe you want.</p>
+      </div>
+      <div class="how-card">
+        <span class="how-num">03</span>
+        <h3>We Confirm</h3>
+        <p>We'll confirm availability and details on WhatsApp.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit" class="visit-section">
+    <div class="visit-inner">
+      <div class="visit-content">
+        <p class="eyebrow">COME THROUGH</p>
+        <h2>Find us in Githurai.</h2>
+        <p>Original. Curated. Available. Come see the collection in person, or browse online and order on WhatsApp.</p>
+
+        <div class="visit-details">
+          <div class="visit-detail">
+            <span>LOCATION</span>
+            <strong>Githurai<br>Kenya</strong>
+          </div>
+          <div class="visit-detail">
+            <span>PHONE</span>
+            <strong><a href="tel:+254740636756">+254 740 636 756</a></strong>
+          </div>
+          <div class="visit-detail">
+            <span>WHATSAPP</span>
+            <strong><a href="https://wa.me/254740636756?text=Hi%20Au%20Sio%20[SITE]" target="_blank" rel="noopener">Chat with us</a></strong>
+          </div>
+        </div>
+
+        <div class="visit-actions">
+          <a href="https://wa.me/254740636756?text=Hi%20Au%20Sio%20[SITE]%2C%20I'd%20like%20to%20see%20what's%20available" class="btn btn-primary" target="_blank" rel="noopener">Message on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <p class="eyebrow">READY WHEN YOU ARE</p>
+    <h2>Your next pair is waiting.</h2>
+    <p>Original kicks. Honest prices. Real taste.</p>
+    <a href="https://wa.me/254740636756?text=Hi%20Au%20Sio%20[SITE]%2C%20I%20want%20to%20see%20what's%20available" class="btn btn-primary" target="_blank" rel="noopener">See the Collection</a>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Au Sio Kicks Collection</p>
+  <p class="footer-sub">Githurai, Kenya · +254 740 636 756</p>
+  <p class="footer-fine">© 2026 Au Sio Kicks Collection. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+<a href="https://wa.me/254740636756?text=Hi%20Au%20Sio%20[SITE]%2C%20I%20want%20to%20see%20what's%20available" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M20.5 3.5A11.9 11.9 0 0 0 12 0C5.4 0 0 5.4 0 12c0 2.1.5 4.1 1.6 5.9L0 24l6.3-1.6A11.9 11.9 0 0 0 12 24c6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.5-8.5zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7.9 1-3.6-.2-.4A9.7 9.7 0 0 1 2.2 12C2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12s-4.4 9.8-9.8 9.8zm5.4-7.3c-.3-.1-1.7-.9-2-1s-.5-.1-.7.1c-.2.3-.7 1-.9 1.2s-.3.2-.6.1c-.3-.1-1.3-.5-2.4-1.5c-.9-.8-1.5-1.8-1.7-2.1s0-.5.1-.6c.1-.1.3-.4.5-.5.2-.2.2-.3.3-.5s.1-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 5 4.3c.7.3 1.2.5 1.7.6c.7.2 1.3.2 1.8.1c.5-.1 1.7-.7 1.9-1.4s.2-1.2.2-1.4s-.2-.3-.4-.4z"/></svg>
+</a>
+
+
+<aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+  <div class="cart-header">
+    <h3>Your order</h3>
+    <button type="button" class="cart-close" id="cartClose" aria-label="Close">×</button>
+  </div>
+  <div class="cart-items" id="cartItems"><p class="cart-empty">Your cart is empty.</p></div>
+  <div class="cart-footer">
+    <p class="cart-note">Final prices confirmed on WhatsApp.</p>
+    <button type="button" class="btn btn-primary cart-checkout" id="cartCheckout">Send order on WhatsApp</button>
+  </div>
+</aside>
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<div class="modal" id="productModal" aria-hidden="true">
+  <div class="modal-content">
+    <button type="button" class="modal-close" id="modalClose" aria-label="Close">×</button>
+    <div class="modal-image"><img id="modalImage" src="" alt=""></div>
+    <div class="modal-info">
+      <p class="product-brand" id="modalBrand"></p>
+      <h3 id="modalName"></h3>
+      <p class="product-meta" id="modalMeta"></p>
+      <p class="modal-desc" id="modalDesc"></p>
+      <div class="modal-footer">
+        <span class="product-price">Ask price</span>
+        <button type="button" class="btn btn-primary" id="modalAdd">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast">Added to cart</div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Au Sio — Admin</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .admin { max-width: 640px; margin: 0 auto; padding: 40px 20px; }
+  .admin h1 { color: var(--gold); margin-bottom: 8px; }
+  .admin p.sub { color: var(--muted); margin-bottom: 32px; }
+  .field { margin-bottom: 20px; }
+  .field label { display: block; font-size: 0.7rem; letter-spacing: 0.2em; color: var(--gold); font-weight: 600; margin-bottom: 8px; }
+  .field input { width: 100%; background: var(--surface); border: 1px solid var(--border); color: var(--text); padding: 14px 16px; border-radius: 10px; font-family: inherit; font-size: 1rem; }
+  .field input:focus { outline: none; border-color: var(--gold); }
+  .output { margin-top: 32px; padding: 20px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; font-family: monospace; font-size: 0.75rem; white-space: pre-wrap; color: var(--gold-light); min-height: 80px; word-break: break-word; }
+  .copy-btn { margin-top: 12px; background: var(--gold); color: var(--black); border: none; padding: 12px 24px; border-radius: 999px; font-weight: 600; font-size: 0.9rem; cursor: pointer; font-family: inherit; }
+  .copy-btn:hover { background: var(--gold-light); }
+  .note { margin-top: 24px; padding: 16px; border-left: 3px solid var(--gold); background: var(--surface); font-size: 0.85rem; color: var(--muted); line-height: 1.7; }
+</style>
+</head>
+<body>
+<div class="admin">
+  <h1>Au Sio — Add a Shoe</h1>
+  <p class="sub">Fill the form. Copy the block. Paste it into your site.</p>
+
+  <div class="field"><label>SHOE NAME</label><input id="name" placeholder="e.g. Air Jordan 1 Mid — Black/Red"></div>
+  <div class="field"><label>BRAND</label><input id="brand" placeholder="e.g. Jordan, Nike, Puma"></div>
+  <div class="field"><label>SIZE</label><input id="size" placeholder="e.g. UK 9"></div>
+  <div class="field"><label>CONDITION</label><input id="condition" placeholder="e.g. Excellent, Unique"></div>
+  <div class="field"><label>IMAGE FILENAME</label><input id="image" placeholder="e.g. shoe-5.jpg"></div>
+
+  <button class="copy-btn" onclick="generate()">Generate Shoe Card</button>
+
+  <div class="output" id="output">Your shoe card will appear here…</div>
+  <button class="copy-btn" onclick="copyIt()" id="copyBtn" style="display:none">Copy to Clipboard</button>
+
+  <div class="note">
+    <strong style="color:var(--gold)">How to use:</strong><br>
+    1. Save your shoe photo as <code>shoe-N.jpg</code> in the images folder<br>
+    2. Fill this form and tap Generate<br>
+    3. Copy the code<br>
+    4. Paste it inside <code>&lt;div class="product-grid"&gt;</code> in <code>index.html</code><br>
+    5. Push to GitHub — your site updates in 60 seconds
+  </div>
+</div>
+
+<script>
+function generate() {
+  const name = document.getElementById('name').value || 'Shoe name';
+  const brand = document.getElementById('brand').value || 'Brand';
+  const size = document.getElementById('size').value || 'UK 9';
+  const condition = document.getElementById('condition').value || 'Excellent';
+  const image = document.getElementById('image').value || 'shoe-new.jpg';
+  const waText = encodeURIComponent(`Hi Au Sio [SITE], I'm interested in the ${name} (${size})`);
+  const waLink = `https://wa.me/254740636756?text=${waText}`;
+  const card = `
+      <article class="product-card" data-brand="${brand.toLowerCase()}">
+        <div class="product-image">
+          <img src="images/${image}" alt="${name}" loading="lazy">
+          <span class="condition">${condition}</span>
+        </div>
+        <div class="product-info">
+          <p class="product-brand">${brand.toUpperCase()}</p>
+          <h3>${name}</h3>
+          <p class="product-meta">${size} · Original mitumba</p>
+          <div class="product-footer">
+            <span class="product-price">Ask price</span>
+            <a href="${waLink}" class="product-order" target="_blank" rel="noopener">Order</a>
+          </div>
+        </div>
+      </article>`;
+  document.getElementById('output').textContent = card;
+  document.getElementById('copyBtn').style.display = 'inline-block';
+}
+function copyIt() {
+  const text = document.getElementById('output').textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.getElementById('copyBtn');
+    btn.textContent = '✓ Copied';
+    setTimeout(() => btn.textContent = 'Copy to Clipboard', 2000);
+  });
+}
+</script>
+</body>
+</html>
