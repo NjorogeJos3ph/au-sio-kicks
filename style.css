@@ -2,8 +2,10 @@
   --black: #0A0A0A;
   --surface: #151515;
   --surface-2: #1C1C1C;
-  --gold: #C9A961;
-  --gold-light: #E8D5A0;
+  --gold: #D4A24C;
+  --gold-light: #E5B35C;
+  --hot: #B8322A;
+  --hot-light: #CC3D34;
   --text: #F5F0E8;
   --muted: #8A8A85;
   --border: #262626;
@@ -288,3 +290,74 @@ img { max-width: 100%; display: block; }
 /* ===== ADD TO CART BUTTON ===== */
 .add-to-cart { background: var(--gold); color: var(--black); border: none; padding: 8px 18px; border-radius: 999px; font-weight: 600; font-size: 0.82rem; font-family: inherit; cursor: pointer; }
 .add-to-cart:hover { background: var(--gold-light); }
+
+/* ===== PREMIUM BUTTONS ===== */
+.btn-primary {
+  background: var(--gold);
+  color: #1A0E05;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 18px 32px;
+  border: none;
+  border-radius: 999px;
+  min-height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(212, 162, 76, 0.28);
+}
+.btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+.btn-secondary {
+  background: transparent;
+  color: #FFF4E0;
+  border: 2px solid rgba(212, 162, 76, 0.55);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 16px 30px;
+  border-radius: 999px;
+  min-height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-secondary:hover { border-color: var(--gold); color: var(--gold); }
+
+.product-order, .add-to-cart {
+  background: var(--gold);
+  color: #1A0E05;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 999px;
+  min-height: 48px;
+  cursor: pointer;
+}
+.product-order:hover, .add-to-cart:hover { background: var(--gold-light); }
+
+.cart-button {
+  width: 52px;
+  height: 52px;
+  background: var(--gold);
+  color: #1A0E05;
+  box-shadow: 0 4px 14px rgba(212, 162, 76, 0.35);
+}
+.cart-badge {
+  min-width: 26px;
+  height: 26px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  background: #1A0E05;
+  color: var(--gold);
+  border: 2px solid var(--gold);
+}
+.cart-checkout {
+  background: var(--hot);
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 18px 24px;
+  min-height: 56px;
+}
+.cart-checkout:hover { background: var(--hot-light); }
